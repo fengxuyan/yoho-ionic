@@ -1,0 +1,495 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      逛
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content >
+  <ion-segment class="row"  [(ngModel)]="tab_list">
+    <ion-segment-button color="primary" value="new" class="col tab_list_btn">最新</ion-segment-button>
+    <ion-segment-button value="people" class="col tab_list_btn ">人气</ion-segment-button>
+    <ion-segment-button value="switch" class="col tab_list_btn ">搭配</ion-segment-button>
+    <ion-segment-button value="young"  class="col tab_list_btn  ">潮品</ion-segment-button>
+    <ion-segment-button value="video" class="col tab_list_btn ">视频</ion-segment-button>
+  </ion-segment>
+
+  <div class="row">
+
+    <button type="button" (click)="goTOHomePage(12)">CLICK ME!</button>
+  </div>
+  <div class="row">
+    <ion-slides pager>
+      <li class="col slide-pics-height ">
+      <ion-slide style="background-image: url('../../assets/imgs/slide1.jpg');">
+      </ion-slide>
+      </li>
+      <li class="col slide-pics-height ">
+      <ion-slide style="background-image: url('../../assets/imgs/slide2.jpg');">
+      </ion-slide>
+      </li>
+      <li class="col slide-pics-height " >
+      <ion-slide style="background-image: url('../../assets/imgs/slide3.jpg');">
+      </ion-slide>
+      </li>
+    </ion-slides>
+  </div>
+  <div [ngSwitch]="tab_list">
+
+    <ion-list *ngSwitchCase="'new'" >
+      <ion-item >
+        <div class="row cards my-cards " >
+          <ion-card col-12 class="my-ion-card">
+
+      <ion-item>
+        <ion-avatar item-start class="tab_label" >
+          <img src="../../assets/imgs/cat.jpg">
+        </ion-avatar>
+        <span >Marty McFly</span>
+        <span  class="tag">#搭配</span>
+      </ion-item>
+
+      <img src="../../assets/imgs/clothes.jpg">
+
+      <ion-card-content>
+        <h1> DeLorean?! Whoa. This is heavy.</h1>
+        <p> DeLorean?! Whoa. This is heavy.</p>
+      </ion-card-content>
+
+      <ion-row >
+        <ion-col  col-5>
+          <button ion-button icon-left clear small>
+            <!--Basic: auto-select the icon based on the platform -->
+            <ion-icon name="time"></ion-icon>
+            <span>10月26日 12:00</span>
+          </button>
+        </ion-col>
+        <ion-col  col-4>
+          <button ion-button icon-left clear small>
+            <ion-icon name="eye"></ion-icon>
+            <span>4 </span>
+          </button>
+        </ion-col>
+        <ion-col col-3>
+          <button ion-button icon-right clear small>
+            <ion-icon name="thumbs-up"></ion-icon>
+            <span>4</span>
+          </button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div class="product-list-box">
+          <ul class="product-list" style="width: 42.5rem;">
+            <li class="goods-box">
+              <div class="goods-img">
+                <a href="//m.yohobuy.com/product/51652118.html">
+                  <img class="lazy" data-original="//img10.static.yhbimg.com/goodsimg/2017/09/12/17/01446623a3ddf90d75b54dda52b08eeb28.jpg?imageView2/2/w/106/h/138/q/60" src="//img10.static.yhbimg.com/goodsimg/2017/09/12/17/01446623a3ddf90d75b54dda52b08eeb28.jpg?imageView2/2/w/106/h/138/q/60">
+                </a>
+              </div>
+              <div class="goods-info">
+                <a href="//m.yohobuy.com/product/51652118.html">
+                  <p class="title">MACROPUS 工业再生系列字母LOGO拼接织带双肩包</p>
+                  <p class="price">¥339.00</p>
+                </a>
+              </div>
+            </li>
+            <li class="goods-box">
+            <div class="goods-img">
+              <a href="//m.yohobuy.com/product/51637780.html">
+                <img class="lazy" data-original="//img12.static.yhbimg.com/goodsimg/2017/07/04/16/02244ae57a41547325fc75724678f335d8.jpg?imageView2/2/w/106/h/138/q/60" src="//img12.static.yhbimg.com/goodsimg/2017/07/04/16/02244ae57a41547325fc75724678f335d8.jpg?imageView2/2/w/106/h/138/q/60">
+              </a>
+            </div>
+            <div class="goods-info">
+              <a href="//m.yohobuy.com/product/51637780.html">
+                <p class="title">Stussy  S图案休闲卫衣</p>
+                <p class="price">¥799.00</p>
+              </a>
+            </div>
+          </li>
+          </ul>
+        </div>
+
+
+      </ion-row>
+    </ion-card>
+          <ion-card col-12 class="my-ion-card">
+
+            <ion-item>
+              <ion-avatar item-start class="tab_label" >
+                <img src="../../assets/imgs/cat.jpg">
+              </ion-avatar>
+              <span >Marty McFly</span>
+              <span  class="tag">#搭配</span>
+            </ion-item>
+
+            <img src="../../assets/imgs/clothes.jpg">
+
+            <ion-card-content>
+              <h1> DeLorean?! Whoa. This is heavy.</h1>
+              <p> DeLorean?! Whoa. This is heavy.</p>
+            </ion-card-content>
+
+            <ion-row >
+              <ion-col  col-5>
+                <button ion-button icon-left clear small>
+                  <!--Basic: auto-select the icon based on the platform -->
+                  <ion-icon name="time"></ion-icon>
+                  <span>10月26日 12:00</span>
+                </button>
+              </ion-col>
+              <ion-col  col-4>
+                <button ion-button icon-left clear small>
+                  <ion-icon name="eye"></ion-icon>
+                  <span>4 </span>
+                </button>
+              </ion-col>
+              <ion-col col-3>
+                <button ion-button icon-right clear small>
+                  <ion-icon name="thumbs-up"></ion-icon>
+                  <span>4</span>
+                </button>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <div class="product-list-box">
+                <ul class="product-list" style="width: 42.5rem;">
+                  <li class="goods-box">
+                    <div class="goods-img">
+                      <a href="//m.yohobuy.com/product/51652118.html">
+                        <img class="lazy" data-original="//img10.static.yhbimg.com/goodsimg/2017/09/12/17/01446623a3ddf90d75b54dda52b08eeb28.jpg?imageView2/2/w/106/h/138/q/60" src="//img10.static.yhbimg.com/goodsimg/2017/09/12/17/01446623a3ddf90d75b54dda52b08eeb28.jpg?imageView2/2/w/106/h/138/q/60">
+                      </a>
+                    </div>
+                    <div class="goods-info">
+                      <a href="//m.yohobuy.com/product/51652118.html">
+                        <p class="title">MACROPUS 工业再生系列字母LOGO拼接织带双肩包</p>
+                        <p class="price">¥339.00</p>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="goods-box">
+                    <div class="goods-img">
+                      <a href="//m.yohobuy.com/product/51637780.html">
+                        <img class="lazy" data-original="//img12.static.yhbimg.com/goodsimg/2017/07/04/16/02244ae57a41547325fc75724678f335d8.jpg?imageView2/2/w/106/h/138/q/60" src="//img12.static.yhbimg.com/goodsimg/2017/07/04/16/02244ae57a41547325fc75724678f335d8.jpg?imageView2/2/w/106/h/138/q/60">
+                      </a>
+                    </div>
+                    <div class="goods-info">
+                      <a href="//m.yohobuy.com/product/51637780.html">
+                        <p class="title">Stussy  S图案休闲卫衣</p>
+                        <p class="price">¥799.00</p>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+
+            </ion-row>
+          </ion-card>
+          <ion-card col-12 class="my-ion-card">
+
+            <ion-item>
+              <ion-avatar item-start class="tab_label" >
+                <img src="../../assets/imgs/cat.jpg">
+              </ion-avatar>
+              <span >Marty McFly</span>
+              <span  class="tag">#搭配</span>
+            </ion-item>
+
+            <img src="../../assets/imgs/clothes.jpg">
+
+            <ion-card-content>
+              <h1> DeLorean?! Whoa. This is heavy.</h1>
+              <p> DeLorean?! Whoa. This is heavy.</p>
+            </ion-card-content>
+
+            <ion-row >
+              <ion-col  col-5>
+                <button ion-button icon-left clear small>
+                  <!--Basic: auto-select the icon based on the platform -->
+                  <ion-icon name="time"></ion-icon>
+                  <span>10月26日 12:00</span>
+                </button>
+              </ion-col>
+              <ion-col  col-4>
+                <button ion-button icon-left clear small>
+                  <ion-icon name="eye"></ion-icon>
+                  <span>4 </span>
+                </button>
+              </ion-col>
+              <ion-col col-3>
+                <button ion-button icon-right clear small>
+                  <ion-icon name="thumbs-up"></ion-icon>
+                  <span>4</span>
+                </button>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <div class="product-list-box">
+                <ul class="product-list" style="width: 42.5rem;">
+                  <li class="goods-box">
+                    <div class="goods-img">
+                      <a href="//m.yohobuy.com/product/51652118.html">
+                        <img class="lazy" data-original="//img10.static.yhbimg.com/goodsimg/2017/09/12/17/01446623a3ddf90d75b54dda52b08eeb28.jpg?imageView2/2/w/106/h/138/q/60" src="//img10.static.yhbimg.com/goodsimg/2017/09/12/17/01446623a3ddf90d75b54dda52b08eeb28.jpg?imageView2/2/w/106/h/138/q/60">
+                      </a>
+                    </div>
+                    <div class="goods-info">
+                      <a href="//m.yohobuy.com/product/51652118.html">
+                        <p class="title">MACROPUS 工业再生系列字母LOGO拼接织带双肩包</p>
+                        <p class="price">¥339.00</p>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="goods-box">
+                    <div class="goods-img">
+                      <a href="//m.yohobuy.com/product/51637780.html">
+                        <img class="lazy" data-original="//img12.static.yhbimg.com/goodsimg/2017/07/04/16/02244ae57a41547325fc75724678f335d8.jpg?imageView2/2/w/106/h/138/q/60" src="//img12.static.yhbimg.com/goodsimg/2017/07/04/16/02244ae57a41547325fc75724678f335d8.jpg?imageView2/2/w/106/h/138/q/60">
+                      </a>
+                    </div>
+                    <div class="goods-info">
+                      <a href="//m.yohobuy.com/product/51637780.html">
+                        <p class="title">Stussy  S图案休闲卫衣</p>
+                        <p class="price">¥799.00</p>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+
+            </ion-row>
+          </ion-card>
+        </div>
+
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'young'">
+      <ion-item>
+        <div class="row cards my-cards " >
+          <ion-card col-12 class="my-ion-card">
+
+            <ion-item>
+              <ion-avatar item-start class="tab_label" >
+                <img src="../../assets/imgs/cat.jpg">
+              </ion-avatar>
+              <span >Marty McFly</span>
+              <span  class="tag">#搭配</span>
+            </ion-item>
+
+            <img src="../../assets/imgs/clothes.jpg">
+
+            <ion-card-content>
+              <h1> DeLorean?! Whoa. This is heavy.</h1>
+              <p> DeLorean?! Whoa. This is heavy.</p>
+            </ion-card-content>
+
+            <ion-row >
+              <ion-col  col-5>
+                <button ion-button icon-left clear small>
+                  <!--Basic: auto-select the icon based on the platform -->
+                  <ion-icon name="time"></ion-icon>
+                  <span>10月26日 12:00</span>
+                </button>
+              </ion-col>
+              <ion-col  col-4>
+                <button ion-button icon-left clear small>
+                  <ion-icon name="eye"></ion-icon>
+                  <span>4 </span>
+                </button>
+              </ion-col>
+              <ion-col col-3>
+                <button ion-button icon-right clear small>
+                  <ion-icon name="thumbs-up"></ion-icon>
+                  <span>4</span>
+                </button>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <div class="product-list-box">
+                <ul class="product-list" style="width: 42.5rem;">
+                  <li class="goods-box">
+                    <div class="goods-img">
+                      <a href="//m.yohobuy.com/product/51652118.html">
+                        <img class="lazy" data-original="//img10.static.yhbimg.com/goodsimg/2017/09/12/17/01446623a3ddf90d75b54dda52b08eeb28.jpg?imageView2/2/w/106/h/138/q/60" src="//img10.static.yhbimg.com/goodsimg/2017/09/12/17/01446623a3ddf90d75b54dda52b08eeb28.jpg?imageView2/2/w/106/h/138/q/60">
+                      </a>
+                    </div>
+                    <div class="goods-info">
+                      <a href="//m.yohobuy.com/product/51652118.html">
+                        <p class="title">MACROPUS 工业再生系列字母LOGO拼接织带双肩包</p>
+                        <p class="price">¥339.00</p>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="goods-box">
+                    <div class="goods-img">
+                      <a href="//m.yohobuy.com/product/51637780.html">
+                        <img class="lazy" data-original="//img12.static.yhbimg.com/goodsimg/2017/07/04/16/02244ae57a41547325fc75724678f335d8.jpg?imageView2/2/w/106/h/138/q/60" src="//img12.static.yhbimg.com/goodsimg/2017/07/04/16/02244ae57a41547325fc75724678f335d8.jpg?imageView2/2/w/106/h/138/q/60">
+                      </a>
+                    </div>
+                    <div class="goods-info">
+                      <a href="//m.yohobuy.com/product/51637780.html">
+                        <p class="title">Stussy  S图案休闲卫衣</p>
+                        <p class="price">¥799.00</p>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+
+            </ion-row>
+          </ion-card>
+          <ion-card col-12 class="my-ion-card">
+
+            <ion-item>
+              <ion-avatar item-start class="tab_label" >
+                <img src="../../assets/imgs/cat.jpg">
+              </ion-avatar>
+              <span >Marty McFly</span>
+              <span  class="tag">#搭配</span>
+            </ion-item>
+
+            <img src="../../assets/imgs/clothes.jpg">
+
+            <ion-card-content>
+              <h1> DeLorean?! Whoa. This is heavy.</h1>
+              <p> DeLorean?! Whoa. This is heavy.</p>
+            </ion-card-content>
+
+            <ion-row >
+              <ion-col  col-5>
+                <button ion-button icon-left clear small>
+                  <!--Basic: auto-select the icon based on the platform -->
+                  <ion-icon name="time"></ion-icon>
+                  <span>10月26日 12:00</span>
+                </button>
+              </ion-col>
+              <ion-col  col-4>
+                <button ion-button icon-left clear small>
+                  <ion-icon name="eye"></ion-icon>
+                  <span>4 </span>
+                </button>
+              </ion-col>
+              <ion-col col-3>
+                <button ion-button icon-right clear small>
+                  <ion-icon name="thumbs-up"></ion-icon>
+                  <span>4</span>
+                </button>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <div class="product-list-box">
+                <ul class="product-list" style="width: 42.5rem;">
+                  <li class="goods-box">
+                    <div class="goods-img">
+                      <a href="//m.yohobuy.com/product/51652118.html">
+                        <img class="lazy" data-original="//img10.static.yhbimg.com/goodsimg/2017/09/12/17/01446623a3ddf90d75b54dda52b08eeb28.jpg?imageView2/2/w/106/h/138/q/60" src="//img10.static.yhbimg.com/goodsimg/2017/09/12/17/01446623a3ddf90d75b54dda52b08eeb28.jpg?imageView2/2/w/106/h/138/q/60">
+                      </a>
+                    </div>
+                    <div class="goods-info">
+                      <a href="//m.yohobuy.com/product/51652118.html">
+                        <p class="title">MACROPUS 工业再生系列字母LOGO拼接织带双肩包</p>
+                        <p class="price">¥339.00</p>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="goods-box">
+                    <div class="goods-img">
+                      <a href="//m.yohobuy.com/product/51637780.html">
+                        <img class="lazy" data-original="//img12.static.yhbimg.com/goodsimg/2017/07/04/16/02244ae57a41547325fc75724678f335d8.jpg?imageView2/2/w/106/h/138/q/60" src="//img12.static.yhbimg.com/goodsimg/2017/07/04/16/02244ae57a41547325fc75724678f335d8.jpg?imageView2/2/w/106/h/138/q/60">
+                      </a>
+                    </div>
+                    <div class="goods-info">
+                      <a href="//m.yohobuy.com/product/51637780.html">
+                        <p class="title">Stussy  S图案休闲卫衣</p>
+                        <p class="price">¥799.00</p>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+
+            </ion-row>
+          </ion-card>
+          <ion-card col-12 class="my-ion-card">
+
+            <ion-item>
+              <ion-avatar item-start class="tab_label" >
+                <img src="../../assets/imgs/cat.jpg">
+              </ion-avatar>
+              <span >Marty McFly</span>
+              <span  class="tag">#搭配</span>
+            </ion-item>
+
+            <img src="../../assets/imgs/clothes.jpg">
+
+            <ion-card-content>
+              <h1> DeLorean?! Whoa. This is heavy.</h1>
+              <p> DeLorean?! Whoa. This is heavy.</p>
+            </ion-card-content>
+
+            <ion-row >
+              <ion-col  col-5>
+                <button ion-button icon-left clear small>
+                  <!--Basic: auto-select the icon based on the platform -->
+                  <ion-icon name="time"></ion-icon>
+                  <span>10月26日 12:00</span>
+                </button>
+              </ion-col>
+              <ion-col  col-4>
+                <button ion-button icon-left clear small>
+                  <ion-icon name="eye"></ion-icon>
+                  <span>4 </span>
+                </button>
+              </ion-col>
+              <ion-col col-3>
+                <button ion-button icon-right clear small>
+                  <ion-icon name="thumbs-up"></ion-icon>
+                  <span>4</span>
+                </button>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <div class="product-list-box">
+                <ul class="product-list" style="width: 42.5rem;">
+                  <li class="goods-box">
+                    <div class="goods-img">
+                      <a href="//m.yohobuy.com/product/51652118.html">
+                        <img class="lazy" data-original="//img10.static.yhbimg.com/goodsimg/2017/09/12/17/01446623a3ddf90d75b54dda52b08eeb28.jpg?imageView2/2/w/106/h/138/q/60" src="//img10.static.yhbimg.com/goodsimg/2017/09/12/17/01446623a3ddf90d75b54dda52b08eeb28.jpg?imageView2/2/w/106/h/138/q/60">
+                      </a>
+                    </div>
+                    <div class="goods-info">
+                      <a href="//m.yohobuy.com/product/51652118.html">
+                        <p class="title">MACROPUS 工业再生系列字母LOGO拼接织带双肩包</p>
+                        <p class="price">¥339.00</p>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="goods-box">
+                    <div class="goods-img">
+                      <a href="//m.yohobuy.com/product/51637780.html">
+                        <img class="lazy" data-original="//img12.static.yhbimg.com/goodsimg/2017/07/04/16/02244ae57a41547325fc75724678f335d8.jpg?imageView2/2/w/106/h/138/q/60" src="//img12.static.yhbimg.com/goodsimg/2017/07/04/16/02244ae57a41547325fc75724678f335d8.jpg?imageView2/2/w/106/h/138/q/60">
+                      </a>
+                    </div>
+                    <div class="goods-info">
+                      <a href="//m.yohobuy.com/product/51637780.html">
+                        <p class="title">Stussy  S图案休闲卫衣</p>
+                        <p class="price">¥799.00</p>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+
+            </ion-row>
+          </ion-card>
+        </div>
+      </ion-item>
+    </ion-list>
+
+  </div>
+
+</ion-content>
+

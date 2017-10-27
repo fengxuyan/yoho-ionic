@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-searchbar (input)="getItems($event)"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+<ion-content >
+  <div class="row bg-pic">
+    <li class="col">
+      <ion-list no-lines class="list-menu">
+        <button ion-item *ngFor="let item of items"  (click)="goToOtherPage()" )>
+          {{ item }}
+        </button>
+      </ion-list>
+    </li>
+  </div>
+  <div class="row">
+    <ion-grid>
+      <ion-row class=" op-row">
+        <ion-col col-2>登录</ion-col>
+        <ion-col col-1>|</ion-col>
+        <ion-col col-2>注册</ion-col>
+        <ion-col col-7 class="top">回到顶部 <ion-icon name="arrow-up"></ion-icon></ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
+
+

@@ -1,0 +1,32 @@
+.bg-pic{
+  background-image:url("../../assets/imgs/bg.jpg");
+  background-size: 100% 100%;
+  min-height: 100%;
+}
+.list-menu{
+  padding:2rem;
+  margin-top: 40%;
+}
+.list-menu button{
+  margin-top: 0.6rem;
+  border:5px solid #fff !important;
+  background: #000;
+  color:#fff;
+}
+ion-item{
+}
+ion-header{
+  //display: none !important;
+}
+.op-row{
+  padding: 3rem;
+  height: 3rem;
+  line-height: 0;
+}
+.top{
+
+  text-align: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
