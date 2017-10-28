@@ -14,3 +14,25 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.menus-ico-size ion-icon{
+  font-size: 2.2em;
+}
+.menus-ico-size .boys{
+  display: inline-block;
+  text-indent:20px;
+  font-size: 1.2em;
+}
+.size-small{
+  text-indent: 10px;
+  font-size: 0.8em;
+}
+.menu-list button .label{
+  background: #fff;
+}
+.menu-list .my-arrow-forward{
+  color: #ddd;
+  float: right;
+  padding-right: 1.4rem;
+  font-size: 3rem;
+  line-height: 3rem;
+}

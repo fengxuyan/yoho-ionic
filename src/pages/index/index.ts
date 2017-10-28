@@ -24,7 +24,7 @@ export class IndexPage {
     // console.log('bye');
     //push another page onto the history stack
     //causing the nav controller to animate the new page in
-    this.navCtrl.push('home-page');
+    this.navCtrl.push('tabs-page');
   }
   goToTop(){
   }

@@ -1,0 +1,177 @@
+<!--
+  Generated template for the NewProductPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>NewarrivedPage</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="big-pic-style" style="padding: 0;">
+    <ion-row>
+      <ion-col col-12 style="padding: 0;">
+        <ion-img src="//img11.static.yhbimg.com/yhb-img01/2017/04/28/13/0195a172b6ec4c098533f4c5c082fad146.jpg?imageView2/2/w/640/h/240/q/60"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-segment class="row"  [(ngModel)]="tab_list">
+    <ion-segment-button color="primary" value="last" class="col tab_list_btn">10月27号</ion-segment-button>
+    <ion-segment-button value="thisweek" class="col tab_list_btn ">本周上新</ion-segment-button>
+    <ion-segment-button value="Sales" class="col tab_list_btn ">销量</ion-segment-button>
+    <ion-segment-button value="select"  class="col tab_list_btn  ">筛选</ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="tab_list">
+
+    <ion-list *ngSwitchCase="'last'">
+      <ion-grid>
+        <ion-row>
+          <ion-col col-6>
+            <div class="pic-box">
+              <img src="//img10.static.yhbimg.com/goodsimg/2017/10/12/12/01cbfbad6cdb66a5cc132227861085dad5.jpg?imageMogr2/thumbnail/235x314/background/d2hpdGU=/position/center/quality/60/format/webp" alt="">
+              <dl>
+                <dt class="goods-name">Wade 韦德悟道男士文化鞋</dt>
+                <dt class="goods-price">￥499.00</dt>
+              </dl>
+            </div>
+          </ion-col>
+          <ion-col col-6>
+            <div class="pic-box">
+              <img src="//img10.static.yhbimg.com/goodsimg/2017/10/12/12/01cbfbad6cdb66a5cc132227861085dad5.jpg?imageMogr2/thumbnail/235x314/background/d2hpdGU=/position/center/quality/60/format/webp" alt="">
+              <dl>
+                <dt class="goods-name">Wade 韦德悟道男士文化鞋</dt>
+                <dt class="goods-price">￥499.00</dt>
+              </dl>
+            </div>
+          </ion-col>
+          <ion-col col-6>
+            <div class="pic-box">
+              <img src="//img10.static.yhbimg.com/goodsimg/2017/10/24/13/01ee2e4afd53876ea8cd30d62add3d2f5b.jpg?imageMogr2/thumbnail/235x314/background/d2hpdGU=/position/center/quality/60/format/webp" alt="">
+              <dl>
+                <dt class="goods-name">低帮翻毛皮休闲鞋</dt>
+                <dt class="goods-price">￥399.00</dt>
+              </dl>
+            </div>
+          </ion-col>
+          <ion-col col-6>
+            <div class="pic-box">
+              <img src="//img10.static.yhbimg.com/goodsimg/2017/10/24/13/01ee2e4afd53876ea8cd30d62add3d2f5b.jpg?imageMogr2/thumbnail/235x314/background/d2hpdGU=/position/center/quality/60/format/webp" alt="">
+              <dl>
+                <dt class="goods-name">低帮翻毛皮休闲鞋</dt>
+                <dt class="goods-price">￥399.00</dt>
+              </dl>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'thisweek'">
+      <ion-grid>
+        <ion-row>
+          <ion-col col-6>
+            <div class="pic-box">
+              <img src="//img11.static.yhbimg.com/goodsimg/2017/10/25/10/018e90d220e2dd648287a70573c6856a3d.jpg?imageMogr2/thumbnail/235x314/background/d2hpdGU=/position/center/quality/60" alt="">
+              <dl>
+                <dt class="goods-name">Wade 韦德悟道男士文化鞋</dt>
+                <dt class="goods-price">￥499.00</dt>
+              </dl>
+            </div>
+          </ion-col>
+          <ion-col col-6>
+            <div class="pic-box">
+              <img src="//img11.static.yhbimg.com/goodsimg/2017/10/25/10/018e90d220e2dd648287a70573c6856a3d.jpg?imageMogr2/thumbnail/235x314/background/d2hpdGU=/position/center/quality/60" alt="">
+              <dl>
+                <dt class="goods-name">Wade 韦德悟道男士文化鞋</dt>
+                <dt class="goods-price">￥499.00</dt>
+              </dl>
+            </div>
+          </ion-col>
+          <ion-col col-6>
+            <div class="pic-box">
+              <img src="//img11.static.yhbimg.com/goodsimg/2017/10/26/14/01d312a9dc64475a6f460dbcd3b7fa64c8.jpg?imageMogr2/thumbnail/235x314/background/d2hpdGU=/position/center/quality/60" alt="">
+              <dl>
+                <dt class="goods-name">低帮翻毛皮休闲鞋</dt>
+                <dt class="goods-price">￥399.00</dt>
+              </dl>
+            </div>
+          </ion-col>
+          <ion-col col-6>
+            <div class="pic-box">
+              <img src="//img11.static.yhbimg.com/goodsimg/2017/10/26/14/01d312a9dc64475a6f460dbcd3b7fa64c8.jpg?imageMogr2/thumbnail/235x314/background/d2hpdGU=/position/center/quality/60" alt="">
+              <dl>
+                <dt class="goods-name">低帮翻毛皮休闲鞋</dt>
+                <dt class="goods-price">￥399.00</dt>
+              </dl>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'Sales'">
+      <ion-grid>
+        <ion-row>
+          <ion-col col-6>
+            <div class="pic-box">
+              <img src="//img12.static.yhbimg.com/goodsimg/2017/08/25/17/0278262d47701653044c1641d4c44a9294.jpg?imageMogr2/thumbnail/235x314/background/d2hpdGU=/position/center/quality/60/format/webp" alt="">
+              <dl>
+                <dt class="goods-name">Wade 韦德悟道男士文化鞋</dt>
+                <dt class="goods-price">￥499.00</dt>
+              </dl>
+            </div>
+          </ion-col>
+          <ion-col col-6>
+            <div class="pic-box">
+              <img src="//img12.static.yhbimg.com/goodsimg/2017/08/25/17/0278262d47701653044c1641d4c44a9294.jpg?imageMogr2/thumbnail/235x314/background/d2hpdGU=/position/center/quality/60/format/webp" alt="">
+              <dl>
+                <dt class="goods-name">Wade 韦德悟道男士文化鞋</dt>
+                <dt class="goods-price">￥499.00</dt>
+              </dl>
+            </div>
+          </ion-col>
+          <ion-col col-6>
+            <div class="pic-box">
+              <img src="//img13.static.yhbimg.com/goodsimg/2017/10/26/15/020104a00830933ab0cd8ff149d9da9df5.jpg?imageMogr2/thumbnail/235x314/background/d2hpdGU=/position/center/quality/60/format/webp" alt="">
+              <dl>
+                <dt class="goods-name">低帮翻毛皮休闲鞋</dt>
+                <dt class="goods-price">￥399.00</dt>
+              </dl>
+            </div>
+          </ion-col>
+          <ion-col col-6>
+            <div class="pic-box">
+              <img src="//img13.static.yhbimg.com/goodsimg/2017/10/26/15/020104a00830933ab0cd8ff149d9da9df5.jpg?imageMogr2/thumbnail/235x314/background/d2hpdGU=/position/center/quality/60/format/webp" alt="">
+              <dl>
+                <dt class="goods-name">低帮翻毛皮休闲鞋</dt>
+                <dt class="goods-price">￥399.00</dt>
+              </dl>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'select'">
+      筛选
+    </ion-list>
+
+  </div>
+
+
+  <ion-fab right bottom>
+    <button ion-fab color="light"><ion-icon name="ios-heart-outline"></ion-icon></button>
+    <ion-fab-list side="top">
+      <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+
+</ion-content>

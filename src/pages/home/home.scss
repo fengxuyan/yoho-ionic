@@ -1,3 +1,103 @@
 page-home {
 
 }
+page-home {
+  overflow: hidden;
+}
+.grid-padding-left{
+  padding-left: 30px;
+}
+.grid-padding-left ion-img{
+  border-radius: 50%;
+}
+.banner-style {
+  height: 32%;
+}
+
+.banner-style ion-slide ion-img{
+  contain: inherit;
+}
+.banner-style-small{
+  height:20%;
+}
+.banner-style-small ion-slide ion-img{
+  contain: inherit;
+}
+.big-pic-style ion-img {
+  contain: inherit;
+}
+.title-center{
+  text-align: center;
+}
+.hot-img ion-img{
+  contain: inherit;
+}
+.hot-img ion-col{
+  padding:0;
+}
+.hot-img .border-less-right{
+  border-left:1px solid #ddd;
+  border-bottom:1px solid #ddd;
+  border-top:1px solid #ddd;
+}
+.hot-img .border-all{
+  border-left:1px solid #ddd;
+  border-bottom:1px solid #ddd;
+  border-top:1px solid #ddd;
+  border-right:1px solid #ddd;
+}
+.hot-img .border-less-top{
+  border-left:1px solid #ddd;
+  border-bottom:1px solid #ddd;
+  border-right:1px solid #ddd;
+}
+.hot-img .border-less-top-right{
+  border-left:1px solid #ddd;
+  border-bottom:1px solid #ddd;
+}
+.hot-class ion-col{
+  padding: 1px;
+}
+.scroll-remove-imgstyle{
+  contain: inherit;
+}
+.pic-margin{
+  text-align: center;
+  margin:0;
+}
+.scroll-grid{
+  height: 300px;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+.scroll-row{
+  width: 1580px;
+  height: 300px;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+.scroll-col{
+  width: 1580px;
+  height: 300px;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+.scroll-content-pic{
+  width: 153px;
+  height: 270px;
+  display: inline-block;
+}
+.goods-name{
+  font-size: 1rem;
+  color: #555555;
+}
+.goods-price{
+  font-size: 1rem;
+  color: #555555;
+  margin-top: 10px;
+}
+.home-four{
+  margin-top: 0;
+  font-size: 1rem;
+  color: #555555;
+}

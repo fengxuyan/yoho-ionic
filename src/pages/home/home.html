@@ -4,67 +4,366 @@
   </ion-navbar>
 </ion-header>
 
-
-
 <ion-content>
 
   <!-- 主要内容区域 -->
-  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
-  <ion-slides pager>
+  <ion-slides pager class="banner-style">
 
-    <ion-slide style="background-color: green">
-      <h2>Slide 1</h2>
+    <ion-slide>
+      <ion-img src="//img11.static.yhbimg.com/yhb-img01/2017/10/26/11/018c1ecae0732e8cb1b02f9bc00a586dbd.jpg?imageView2/2/w/640/h/240/q/60"></ion-img>
     </ion-slide>
 
-    <ion-slide style="background-color: blue">
-      <h2>Slide 2</h2>
+    <ion-slide>
+      <ion-img src="//img10.static.yhbimg.com/yhb-img01/2017/10/24/17/0109ca4fa2e7dd67bbc7a83975c0957c0a.jpg?imageView2/2/w/640/h/240/q/60"></ion-img>
     </ion-slide>
 
-    <ion-slide style="background-color: red">
-      <h2>Slide 3</h2>
+    <ion-slide>
+      <ion-img src="//img11.static.yhbimg.com/yhb-img01/2017/10/24/17/01f4465a9b196d367b1f8613dc755ff6c4.jpg?imageView2/2/w/640/h/240/q/60"></ion-img>
     </ion-slide>
 
-    <ion-slide style="background-color: green">
-      <h2>Slide 1</h2>
+    <ion-slide>
+      <ion-img src="//img11.static.yhbimg.com/yhb-img01/2017/10/24/17/01db04a699b86926e3b217c7a56aaaf73c.jpg?imageView2/2/w/640/h/240/q/60"></ion-img>
     </ion-slide>
 
-    <ion-slide style="background-color: blue">
-      <h2>Slide 2</h2>
+    <ion-slide>
+      <ion-img src="//img10.static.yhbimg.com/yhb-img01/2017/10/25/10/01c3e100375251adf591d003f59603be61.jpg?imageView2/2/w/640/h/240/q/60"></ion-img>
     </ion-slide>
 
-    <ion-slide style="background-color: red">
-      <h2>Slide 3</h2>
+    <ion-slide>
+      <ion-img src="//img11.static.yhbimg.com/yhb-img01/2017/10/24/17/0148aff69f58d8b72fcd5a5f58c0010fe3.jpg?imageView2/2/w/640/h/240/q/60"></ion-img>
     </ion-slide>
 
   </ion-slides>
 
   <!-- 小图标 -->
-  <ion-grid>
+  <ion-grid class="grid-padding-left">
     <ion-row>
-      <ion-col col-3>
-        <ion-img [width]="50" [height]="50" style="border-radius: 50%" src="//img10.static.yhbimg.com/yhb-img01/2017/02/03/09/01ae835d5ae6d9502818daf351ad2db6cf.png?imageView2/2/w/98/h/98/q/60"></ion-img>
-        <p style="margin-top: 0;">新品到着</p>
+      <ion-col col-3 (click)="goToMyPage()">
+        <ion-img [width]="50" [height]="50" src="//img10.static.yhbimg.com/yhb-img01/2017/02/03/09/01ae835d5ae6d9502818daf351ad2db6cf.png?imageView2/2/w/98/h/98/q/60"></ion-img>
+        <p class="home-four">新品到着</p>
       </ion-col>
       <ion-col col-3>
-        <ion-img [width]="50" [height]="50" style="border-radius: 50%" src="//img11.static.yhbimg.com/yhb-img01/2017/02/03/09/011004f5a04caaf9c18d7848049a75981e.png?imageView2/2/w/98/h/98/q/60"></ion-img>
-        <p style="margin-top: 0;">人气搭配</p>
+        <ion-img [width]="50" [height]="50" src="//img11.static.yhbimg.com/yhb-img01/2017/02/03/09/011004f5a04caaf9c18d7848049a75981e.png?imageView2/2/w/98/h/98/q/60"></ion-img>
+        <p class="home-four">人气搭配</p>
       </ion-col>
       <ion-col col-3>
-        <ion-img [width]="50" [height]="50" style="border-radius: 50%" src="//img11.static.yhbimg.com/yhb-img01/2017/02/03/09/01d35157ab5942ea40b4f08a11c1680a17.png?imageView2/2/w/98/h/98/q/60"></ion-img>
-        <p style="margin-top: 0;">折扣专区</p>
+        <ion-img [width]="50" [height]="50" src="//img11.static.yhbimg.com/yhb-img01/2017/02/03/09/01d35157ab5942ea40b4f08a11c1680a17.png?imageView2/2/w/98/h/98/q/60"></ion-img>
+        <p class="home-four">折扣专区</p>
       </ion-col>
       <ion-col col-3>
-        <ion-img [width]="50" [height]="50" style="border-radius: 50%" src="//img10.static.yhbimg.com/yhb-img01/2017/02/03/09/01b097e06ac9fc78bbcc3d3e0dfbe01fcc.png?imageView2/2/w/98/h/98/q/60"></ion-img>
-        <p style="margin-top: 0;">全部分类</p>
+        <ion-img [width]="50" [height]="50" src="//img10.static.yhbimg.com/yhb-img01/2017/02/03/09/01b097e06ac9fc78bbcc3d3e0dfbe01fcc.png?imageView2/2/w/98/h/98/q/60"></ion-img>
+        <p class="home-four">全部分类</p>
       </ion-col>
     </ion-row>
   </ion-grid>
 
   <!-- 大图片 -->
+  <ion-grid class="big-pic-style">
+    <ion-row>
+      <ion-col col-12>
+        <ion-img src="//img11.static.yhbimg.com/yhb-img01/2017/10/24/17/01df2181811b5630572c679bb0d66f17fb.jpg?imageView2/3/w/640/h/200/q/60"></ion-img>
+      </ion-col>
+      <ion-col col-12>
+        <ion-img src="//img11.static.yhbimg.com/yhb-img01/2017/10/25/11/01d4d6aecbaf02416893f50b5de2964cdf.jpg?imageView2/3/w/640/h/200/q/60"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- 热门品类 -->
   <ion-grid>
     <ion-row>
       <ion-col col-12>
-        <ion-img style="width: 100%; height: 100%;" src="//img11.static.yhbimg.com/yhb-img01/2017/10/24/17/01df2181811b5630572c679bb0d66f17fb.jpg?imageView2/3/w/640/h/200/q/60"></ion-img>
+        <p class="title-center">热门品类</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid class="hot-img">
+    <ion-row>
+      <!-- 第一组 -->
+      <ion-col class="border-less-right" col-3>
+        <ion-img src="//img10.static.yhbimg.com/yhb-img01/2017/10/24/17/019cbd9855db6df3305c912d2578d2a791.jpg?imageView2/2/w/140/h/140/q/60"></ion-img>
+      </ion-col>
+      <ion-col class="border-less-right" col-3>
+        <ion-img src="//img10.static.yhbimg.com/yhb-img01/2017/10/24/17/019cbd9855db6df3305c912d2578d2a791.jpg?imageView2/2/w/140/h/140/q/60"></ion-img>
+      </ion-col>
+      <ion-col class="border-less-right" col-3>
+        <ion-img src="//img10.static.yhbimg.com/yhb-img01/2017/10/24/17/019cbd9855db6df3305c912d2578d2a791.jpg?imageView2/2/w/140/h/140/q/60"></ion-img>
+      </ion-col>
+      <ion-col class="border-all" col-3>
+        <ion-img src="//img10.static.yhbimg.com/yhb-img01/2017/10/24/17/019cbd9855db6df3305c912d2578d2a791.jpg?imageView2/2/w/140/h/140/q/60"></ion-img>
+      </ion-col>
+
+      <!-- 第二组 -->
+      <ion-col class="border-less-top-right" col-3>
+        <ion-img src="//img10.static.yhbimg.com/yhb-img01/2017/10/24/17/01614f45d6ec2d8020698563682f9e5b3a.jpg?imageView2/2/w/140/h/140/q/60"></ion-img>
+      </ion-col>
+      <ion-col class="border-less-top-right" col-3>
+        <ion-img src="//img10.static.yhbimg.com/yhb-img01/2017/10/24/17/01614f45d6ec2d8020698563682f9e5b3a.jpg?imageView2/2/w/140/h/140/q/60"></ion-img>
+      </ion-col>
+      <ion-col class="border-less-top-right" col-3>
+        <ion-img src="//img10.static.yhbimg.com/yhb-img01/2017/10/24/17/01614f45d6ec2d8020698563682f9e5b3a.jpg?imageView2/2/w/140/h/140/q/60"></ion-img>
+      </ion-col>
+      <ion-col class="border-less-top" col-3>
+        <ion-img src="//img10.static.yhbimg.com/yhb-img01/2017/10/24/17/01614f45d6ec2d8020698563682f9e5b3a.jpg?imageView2/2/w/140/h/140/q/60"></ion-img>
+      </ion-col>
+
+      <!-- 第三组 -->
+      <ion-col class="border-less-top-right" col-3>
+        <ion-img src="//img10.static.yhbimg.com/yhb-img01/2017/10/24/17/0176c8a589c23943c94002cdc597b7e058.jpg?imageView2/2/w/140/h/140/q/60"></ion-img>
+      </ion-col>
+      <ion-col class="border-less-top-right" col-3>
+        <ion-img src="//img10.static.yhbimg.com/yhb-img01/2017/10/24/17/0176c8a589c23943c94002cdc597b7e058.jpg?imageView2/2/w/140/h/140/q/60"></ion-img>
+      </ion-col>
+      <ion-col class="border-less-top-right" col-3>
+        <ion-img src="//img10.static.yhbimg.com/yhb-img01/2017/10/24/17/0176c8a589c23943c94002cdc597b7e058.jpg?imageView2/2/w/140/h/140/q/60"></ion-img>
+      </ion-col>
+      <ion-col class="border-less-top" col-3>
+        <ion-img src="//img10.static.yhbimg.com/yhb-img01/2017/10/24/17/0176c8a589c23943c94002cdc597b7e058.jpg?imageView2/2/w/140/h/140/q/60"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- 第二组banner图 -->
+  <ion-slides pager class="banner-style-small">
+
+    <ion-slide>
+      <ion-img src="//img10.static.yhbimg.com/yhb-img01/2017/10/24/17/011126780473cdba7795449e573bf72be3.jpg?imageView2/3/w/640/h/200/q/60"></ion-img>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-img src="//img10.static.yhbimg.com/yhb-img01/2017/10/24/17/015919833b849fa5318202a67864fd1e53.jpg?imageView2/3/w/640/h/200/q/60"></ion-img>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-img src="//img10.static.yhbimg.com/yhb-img01/2017/10/24/17/0163af2fd92d687b61c772a6e93a0bb384.jpg?imageView2/3/w/640/h/200/q/60"></ion-img>
+    </ion-slide>
+
+  </ion-slides>
+
+  <!-- 热门品牌 -->
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <p class="title-center">热门品牌</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid class="hot-img">
+    <ion-row class="hot-class">
+      <ion-col class="border-less-right" col-4>
+        <ion-img src="//img11.static.yhbimg.com/yhb-img01/2017/09/28/15/018c468c112cb919401c6d4e91465465ee.jpg?imageView2/2/w/158/h/174/q/60"></ion-img>
+      </ion-col>
+      <ion-col class="border-less-right" col-4>
+        <ion-img src="//img11.static.yhbimg.com/yhb-img01/2017/09/28/15/01086326341512ad0bbb3e73e7bb72b56c.jpg?imageView2/2/w/158/h/174/q/60"></ion-img>
+      </ion-col>
+      <ion-col class="border-less-right" col-4>
+        <ion-img src="//img11.static.yhbimg.com/yhb-img01/2017/09/28/15/0141079b66902f6824497843ad2f449eb5.jpg?imageView2/2/w/158/h/174/q/60"></ion-img>
+      </ion-col>
+      <ion-col class="border-all" col-4>
+        <ion-img src="//img10.static.yhbimg.com/yhb-img01/2017/09/28/15/010bca16aab56c03ba640e6ff29b69da1b.jpg?imageView2/2/w/158/h/174/q/60"></ion-img>
+      </ion-col>
+
+      <ion-col class="border-less-top-right" col-4>
+        <ion-img src="//img10.static.yhbimg.com/yhb-img01/2017/09/28/15/015b1d1ec46c146aa00ffffdcc35dbc4cb.jpg?imageView2/2/w/158/h/174/q/60"></ion-img>
+      </ion-col>
+      <ion-col class="border-less-top-right" col-4>
+        <ion-img src="//img10.static.yhbimg.com/yhb-img01/2017/09/28/15/01d62f7eb955e4368ada051d851dba3c7b.jpg?imageView2/2/w/158/h/174/q/60"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- 大图片 -->
+  <ion-grid class="big-pic-style">
+    <ion-row>
+      <ion-col col-12>
+        <ion-img src="//img10.static.yhbimg.com/yhb-img01/2017/07/11/11/01ceb896ff54d6e2a88a7ef9eb1bdd86e9.jpg?imageView2/3/w/640/h/200/q/60"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- 人气推荐 -->
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <p class="title-center">人气推荐</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid class="big-pic-style">
+    <ion-row>
+      <ion-col col-12>
+        <ion-img src="//img11.static.yhbimg.com/yhb-img01/2017/08/04/10/015f31dc40baa31dee9f602f1a84a6ae5f.jpg?imageView2/2/w/640/h/200/q/90"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid class="scroll-grid">
+    <ion-row class="scroll-row">
+      <ion-col class="scroll-col" col-12>
+
+        <div class="scroll-content-pic">
+          <img class="scroll-remove-imgstyle" src="//img10.static.yhbimg.com/goodsimg/2017/01/04/17/01a8cd450afc4354a77e2c42a28f5019dc.jpg?imageMogr2/thumbnail/153x206/background/d2hpdGU=/position/center/quality/60"/>
+          <dl class="pic-margin">
+            <dt style="font-size: 2rem;">$99</dt>
+          </dl>
+        </div>
+        <div class="scroll-content-pic">
+          <img class="scroll-remove-imgstyle" src="//img11.static.yhbimg.com/goodsimg/2017/06/13/10/012ffed98c317e2d3f04b0b0eddc92b16b.jpg?imageMogr2/thumbnail/153x206/background/d2hpdGU=/position/center/quality/60"/>
+          <dl class="pic-margin">
+            <dt style="font-size: 2rem;">$99</dt>
+          </dl>
+        </div>
+        <div class="scroll-content-pic">
+          <img class="scroll-remove-imgstyle" src="//img13.static.yhbimg.com/goodsimg/2017/09/25/10/0233192f1e11fa832ee922be916d2c8067.jpg?imageMogr2/thumbnail/153x206/background/d2hpdGU=/position/center/quality/60"/>
+          <dl class="pic-margin">
+            <dt style="font-size: 2rem;">$99</dt>
+          </dl>
+        </div>
+        <div class="scroll-content-pic">
+          <img class="scroll-remove-imgstyle" src="//img12.static.yhbimg.com/goodsimg/2017/08/12/12/029b34deafe81c759026917546c83406f5.jpg?imageMogr2/thumbnail/153x206/background/d2hpdGU=/position/center/quality/60"/>
+          <dl class="pic-margin">
+            <dt style="font-size: 2rem;">$99</dt>
+          </dl>
+        </div>
+        <div class="scroll-content-pic">
+          <img class="scroll-remove-imgstyle" src="//img12.static.yhbimg.com/goodsimg/2017/10/17/15/024dfa232beb53299a692070d6e7bb70b9.jpg?imageMogr2/thumbnail/153x206/background/d2hpdGU=/position/center/quality/60"/>
+          <dl class="pic-margin">
+            <dt style="font-size: 2rem;">$99</dt>
+          </dl>
+        </div>
+        <div class="scroll-content-pic">
+          <img class="scroll-remove-imgstyle" src="//img10.static.yhbimg.com/goodsimg/2017/09/11/14/01fa2522afcd466ef302b11572885803ee.jpg?imageMogr2/thumbnail/153x206/background/d2hpdGU=/position/center/quality/60"/>
+          <dl class="pic-margin">
+            <dt style="font-size: 2rem;">$99</dt>
+          </dl>
+        </div>
+        <div class="scroll-content-pic">
+          <img class="scroll-remove-imgstyle" src="//img12.static.yhbimg.com/goodsimg/2017/06/04/17/026d5915a84a4cbc0cd306da9f4f0559b8.jpg?imageMogr2/thumbnail/153x206/background/d2hpdGU=/position/center/quality/60"/>
+          <dl class="pic-margin">
+            <dt style="font-size: 2rem;">$99</dt>
+          </dl>
+        </div>
+        <div class="scroll-content-pic">
+          <img class="scroll-remove-imgstyle" src="//img12.static.yhbimg.com/goodsimg/2017/10/16/18/0270011a8bd37e80054eb344cdf9076d74.jpg?imageMogr2/thumbnail/153x206/background/d2hpdGU=/position/center/quality/60"/>
+          <dl class="pic-margin">
+            <dt style="font-size: 2rem;">$99</dt>
+          </dl>
+        </div>
+        <div class="scroll-content-pic">
+          <img class="scroll-remove-imgstyle" src="//img12.static.yhbimg.com/goodsimg/2017/08/25/17/0278262d47701653044c1641d4c44a9294.jpg?imageMogr2/thumbnail/153x206/background/d2hpdGU=/position/center/quality/60"/>
+          <dl class="pic-margin">
+            <dt style="font-size: 2rem;">$99</dt>
+          </dl>
+        </div>
+        <div class="scroll-content-pic">
+          <img class="scroll-remove-imgstyle" src="//img12.static.yhbimg.com/goodsimg/2017/09/26/11/0288ac9db851fe7fc81ccecda9c915f2e7.jpg?imageMogr2/thumbnail/153x206/background/d2hpdGU=/position/center/quality/60"/>
+          <dl class="pic-margin">
+            <dt style="font-size: 2rem;">$99</dt>
+          </dl>
+        </div>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- 你可能喜欢 -->
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <h3 class="title-center">你可能喜欢</h3>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6>
+        <div class="pic-box">
+          <img src="//img11.static.yhbimg.com/goodsimg/2017/07/30/13/01829e3ddb90dca2ba9f80091ad9ed51c2.jpg?imageMogr2/thumbnail/235x314/background/d2hpdGU=/position/center/quality/60/format/webp" alt="">
+          <dl>
+            <dt class="goods-name">Wade 韦德悟道男士文化鞋</dt>
+            <dt class="goods-price">￥499.00</dt>
+          </dl>
+        </div>
+      </ion-col>
+      <ion-col col-6>
+        <div class="pic-box">
+          <img src="//img11.static.yhbimg.com/goodsimg/2017/07/30/13/01829e3ddb90dca2ba9f80091ad9ed51c2.jpg?imageMogr2/thumbnail/235x314/background/d2hpdGU=/position/center/quality/60/format/webp" alt="">
+          <dl>
+            <dt class="goods-name">Wade 韦德悟道男士文化鞋</dt>
+            <dt class="goods-price">￥499.00</dt>
+          </dl>
+        </div>
+      </ion-col>
+      <ion-col col-6>
+        <div class="pic-box">
+          <img src="//img10.static.yhbimg.com/goodsimg/2017/08/21/11/01a00463042ece624edc4de6e03482995b.jpg?imageMogr2/thumbnail/235x314/background/d2hpdGU=/position/center/quality/60/format/webp" alt="">
+          <dl>
+            <dt class="goods-name">低帮翻毛皮休闲鞋</dt>
+            <dt class="goods-price">￥399.00</dt>
+          </dl>
+        </div>
+      </ion-col>
+      <ion-col col-6>
+        <div class="pic-box">
+          <img src="//img10.static.yhbimg.com/goodsimg/2017/08/21/11/01a00463042ece624edc4de6e03482995b.jpg?imageMogr2/thumbnail/235x314/background/d2hpdGU=/position/center/quality/60/format/webp" alt="">
+          <dl>
+            <dt class="goods-name">低帮翻毛皮休闲鞋</dt>
+            <dt class="goods-price">￥399.00</dt>
+          </dl>
+        </div>
+      </ion-col>
+      <ion-col col-6>
+        <div class="pic-box">
+          <img src="//img13.static.yhbimg.com/goodsimg/2017/04/10/21/02ca608656f0cd232f4e19d73a4ec5a360.jpg?imageMogr2/thumbnail/235x314/background/d2hpdGU=/position/center/quality/60/format/webp" alt="">
+          <dl>
+            <dt class="goods-name">春娇救志明电影周边</dt>
+            <dt class="goods-price">￥399.00</dt>
+          </dl>
+        </div>
+      </ion-col>
+      <ion-col col-6>
+        <div class="pic-box">
+          <img src="//img13.static.yhbimg.com/goodsimg/2017/04/10/21/02ca608656f0cd232f4e19d73a4ec5a360.jpg?imageMogr2/thumbnail/235x314/background/d2hpdGU=/position/center/quality/60/format/webp" alt="">
+          <dl>
+            <dt class="goods-name">春娇救志明电影周边</dt>
+            <dt class="goods-price">￥399.00</dt>
+          </dl>
+        </div>
+      </ion-col>
+      <ion-col col-6>
+        <div class="pic-box">
+          <img src="//img12.static.yhbimg.com/goodsimg/2017/07/26/10/026d4723d92d6832bae52680ffe93f0adb.jpg?imageMogr2/thumbnail/235x314/background/d2hpdGU=/position/center/quality/60/format/webp" alt="">
+          <dl>
+            <dt class="goods-name">痛仰乐队</dt>
+            <dt class="goods-price">￥199.00</dt>
+          </dl>
+        </div>
+      </ion-col>
+      <ion-col col-6>
+        <div class="pic-box">
+          <img src="//img12.static.yhbimg.com/goodsimg/2017/07/26/10/026d4723d92d6832bae52680ffe93f0adb.jpg?imageMogr2/thumbnail/235x314/background/d2hpdGU=/position/center/quality/60/format/webp" alt="">
+          <dl>
+            <dt class="goods-name">痛仰乐队</dt>
+            <dt class="goods-price">￥199.00</dt>
+          </dl>
+        </div>
+      </ion-col>
+      <ion-col col-6>
+        <div class="pic-box">
+          <img src="//img12.static.yhbimg.com/goodsimg/2017/06/27/16/023ebfe2cec7d8f3ce18fdeb85806fc112.jpg?imageMogr2/thumbnail/235x314/background/d2hpdGU=/position/center/quality/60/format/webp" alt="">
+          <dl>
+            <dt class="goods-name">男士军绿短袖T恤</dt>
+            <dt class="goods-price">￥1999.00</dt>
+          </dl>
+        </div>
+      </ion-col>
+      <ion-col col-6>
+        <div class="pic-box">
+          <img src="//img12.static.yhbimg.com/goodsimg/2017/06/27/16/023ebfe2cec7d8f3ce18fdeb85806fc112.jpg?imageMogr2/thumbnail/235x314/background/d2hpdGU=/position/center/quality/60/format/webp" alt="">
+          <dl>
+            <dt class="goods-name">男士军绿短袖T恤</dt>
+            <dt class="goods-price">￥1999.00</dt>
+          </dl>
+        </div>
       </ion-col>
     </ion-row>
   </ion-grid>

@@ -4,19 +4,23 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { TabsPage } from '../pages/tabs/tabs';
 import {IndexPage } from '../pages/index/index'
+
+import { MenuController } from 'ionic-angular';
+
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
 
   rootPage: any = TabsPage;
-  constructor(platform: Platform) {
+  constructor(platform: Platform, public menuCtrl: MenuController) {
     if (2) {
       this.rootPage = IndexPage;
     }
   }
-
-  items =['男生 BOYS','女生 GIRLS','潮童 KIDS' ,'创意生活 LIFESTYLE'];
+  goToBoysPage(){
+    this.menuCtrl.open('BOYS');
+  }
   // constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
   //   platform.ready().then(() => {
   //     // Okay, so the platform is ready and our plugins are available.

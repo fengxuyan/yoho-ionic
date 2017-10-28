@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header  #Nav>
   <ion-toolbar color="dark">
     <ion-searchbar (input)="getItems($event)"></ion-searchbar>
   </ion-toolbar>
@@ -19,7 +19,7 @@
         <ion-col col-2 (click)="goToLoginPage()">登录</ion-col>
         <ion-col col-1 >|</ion-col>
         <ion-col col-2 (click)="goToRegisterPage()" >注册</ion-col>
-        <ion-col col-7 class="top" (click)="goToTop()">回到顶部 <ion-icon  class="arrow-position" name="arrow-up"></ion-icon></ion-col>
+        <ion-col col-7 class="top" >回到顶部 <ion-icon  class="arrow-position" name="arrow-up"></ion-icon></ion-col>
       </ion-row>
     </ion-grid>
   </div>

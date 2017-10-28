@@ -17,10 +17,37 @@
     </ion-toolbar>
   </ion-header>
   <ion-content>
-    <ion-list>
-      <p>some menu content, could be list items</p >
-      <p>some menu content, could be list items</p >
-      <p>some menu content, could be list items</p >
+    <ion-list class="menus-ico-size menu-list">
+      <button ion-item (click)="goToBoysPage()">
+        <ion-icon ios="ios-walk" md="md-walk"></ion-icon>
+        <span class="boys">男生</span>
+        <span class="size-small">BOYS</span>
+        <ion-icon class="my-arrow-forward" name="arrow-forward"></ion-icon>
+      </button>
+      <button ion-item>
+        <ion-icon ios="ios-woman" md="md-woman"></ion-icon>
+        <span class="boys">女生</span>
+        <span class="size-small">GIRLS</span>
+        <ion-icon class="my-arrow-forward" name="arrow-forward"></ion-icon>
+      </button>
+      <button ion-item>
+        <ion-icon ios="ios-pizza" md="md-pizza"></ion-icon>
+        <span class="boys">童装</span>
+        <span class="size-small">KIDS</span>
+        <ion-icon class="my-arrow-forward" name="arrow-forward"></ion-icon>
+      </button>
+      <button ion-item>
+        <ion-icon ios="ios-pulse" md="md-pulse"></ion-icon>
+        <span class="boys">创意生活</span>
+        <span class="size-small">LIFE STYLE</span>
+        <ion-icon class="my-arrow-forward" name="arrow-forward"></ion-icon>
+      </button>
+      <button ion-item>
+        <ion-icon ios="ios-paw" md="md-paw"></ion-icon>
+        <span class="boys">逛</span>
+        <span class="size-small">TRENDFINDER</span>
+        <ion-icon class="my-arrow-forward" name="arrow-forward"></ion-icon>
+      </button>
     </ion-list>
   </ion-content>
 </ion-menu>
