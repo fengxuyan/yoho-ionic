@@ -2,8 +2,6 @@ import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { HomePage } from './home';
 
-import { IonicApp, IonicModule, DeepLinkConfig } from 'ionic-angular';
-
 @NgModule({
   declarations: [
     HomePage,

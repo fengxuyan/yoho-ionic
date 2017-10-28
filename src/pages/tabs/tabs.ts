@@ -13,9 +13,9 @@ import {IndexPage} from "../index/index";
 })
 export class TabsPage {
   // tab1Root = IndexPage;
-  tab1Root = ContactPage;
+  tab1Root = HomePage;
   tab2Root = AboutPage;
-  tab3Root = HomePage;
+  tab3Root = ContactPage;
   tab4Root = ShopPage;
   tab5Root = MyPage;
 

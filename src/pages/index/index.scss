@@ -7,13 +7,14 @@
   padding:2rem;
   margin-top: 40%;
 }
-.list-menu button{
+.list-menu .list-item{
   margin-top: 0.6rem;
   border:5px solid #fff !important;
   background: #000;
   color:#fff;
 }
-ion-item{
+.list-item .input-wrapper .label{
+  background: #000 !important;
 }
 ion-header{
   //display: none !important;
@@ -29,4 +30,13 @@ ion-header{
   display: flex;
   justify-content: center;
   align-items: center;
+
+}
+.arrow-position {
+  padding-left: 1.3rem;
+}
+.my-arrow-forward{
+  color:#fff;
+  float:right;
+  padding-right:1rem;
 }

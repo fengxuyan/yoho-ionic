@@ -5,21 +5,21 @@
 </ion-header>
 <ion-content >
   <div class="row bg-pic">
-    <li class="col">
-      <ion-list no-lines class="list-menu">
-        <button ion-item *ngFor="let item of items"  (click)="goToOtherPage()" )>
-          {{ item }}
-        </button>
-      </ion-list>
-    </li>
+    <div class="col">
+      <ul class="list-menu">
+        <li ion-item class="list-item"  *ngFor="let item of items"  (click)="goToOtherPage()">
+          {{ item }}<ion-icon class="my-arrow-forward" name="arrow-forward"></ion-icon>
+        </li>
+      </ul>
+    </div>
   </div>
   <div class="row">
     <ion-grid>
       <ion-row class=" op-row">
-        <ion-col col-2>登录</ion-col>
-        <ion-col col-1>|</ion-col>
-        <ion-col col-2>注册</ion-col>
-        <ion-col col-7 class="top">回到顶部 <ion-icon name="arrow-up"></ion-icon></ion-col>
+        <ion-col col-2 (click)="goToLoginPage()">登录</ion-col>
+        <ion-col col-1 >|</ion-col>
+        <ion-col col-2 (click)="goToRegisterPage()" >注册</ion-col>
+        <ion-col col-7 class="top" (click)="goToTop()">回到顶部 <ion-icon  class="arrow-position" name="arrow-up"></ion-icon></ion-col>
       </ion-row>
     </ion-grid>
   </div>
