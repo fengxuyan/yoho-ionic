@@ -1,12 +1,20 @@
-import { Component } from '@angular/core';
+import { Component ,ViewChild } from '@angular/core';
+import { NavController ,Nav } from 'ionic-angular';
 import { IonicPage } from 'ionic-angular';
+
+
+import {ContactPage} from "../contact/contact";
+import {MyPage} from "../my/my";
+import {ShopPage} from "../shop/shop";
+
+
 /**
  * Generated class for the IndexPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-import { App, MenuController, NavController, NavParams } from 'ionic-angular';
+
 
 
 @IonicPage({
@@ -19,14 +27,32 @@ import { App, MenuController, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
+  @ViewChild(Nav) nav :Nav;
 
-  constructor(app: App, menu: MenuController, public navCtrl: NavController, public navParams: NavParams) {
-    menu.enable(true);
-  }
-  goToMyPage(){
-    this.navCtrl.push('new-product', {
+  rootPage:any;
+  pages:Array<{title:string,component:any}>;
+  constructor(public navCtrl: NavController) {
+    // menu.enable(true);
+    this.pages=[
 
-    },{})
+
+      {title:'MyPage',component:MyPage},
+
+      {title:'ShopPage',component:ShopPage},
+
+      {title:'ContactPage',component:ContactPage}
+      ];
   }
+  openPage(page){
+    this.nav.setRoot(page.component)
+  }
+
+  goToMyPage()
+  {
+
+    this.navCtrl.push('new-product')
+
+  }
+
 
 }

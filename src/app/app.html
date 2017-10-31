@@ -1,55 +1,67 @@
 <ion-nav [root]="rootPage"></ion-nav>
 
-
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle icon-only>
-      <ion-icon name='menu'></ion-icon>
-    </button>
-    <ion-title>有货</ion-title>
-  </ion-navbar>
-</ion-header>
-
 <ion-menu [content]="mycontent">
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu</ion-title>
-    </ion-toolbar>
-  </ion-header>
   <ion-content>
-    <ion-list class="menus-ico-size menu-list">
-      <button ion-item (click)="goToBoysPage()">
-        <ion-icon ios="ios-walk" md="md-walk"></ion-icon>
-        <span class="boys">男生</span>
-        <span class="size-small">BOYS</span>
-        <ion-icon class="my-arrow-forward" name="arrow-forward"></ion-icon>
-      </button>
-      <button ion-item>
-        <ion-icon ios="ios-woman" md="md-woman"></ion-icon>
-        <span class="boys">女生</span>
-        <span class="size-small">GIRLS</span>
-        <ion-icon class="my-arrow-forward" name="arrow-forward"></ion-icon>
-      </button>
-      <button ion-item>
-        <ion-icon ios="ios-pizza" md="md-pizza"></ion-icon>
-        <span class="boys">童装</span>
-        <span class="size-small">KIDS</span>
-        <ion-icon class="my-arrow-forward" name="arrow-forward"></ion-icon>
-      </button>
-      <button ion-item>
-        <ion-icon ios="ios-pulse" md="md-pulse"></ion-icon>
-        <span class="boys">创意生活</span>
-        <span class="size-small">LIFE STYLE</span>
-        <ion-icon class="my-arrow-forward" name="arrow-forward"></ion-icon>
-      </button>
-      <button ion-item>
-        <ion-icon ios="ios-paw" md="md-paw"></ion-icon>
-        <span class="boys">逛</span>
-        <span class="size-small">TRENDFINDER</span>
-        <ion-icon class="my-arrow-forward" name="arrow-forward"></ion-icon>
-      </button>
+    <ion-list>
+      <p>some menu content, could be list items</p>
     </ion-list>
   </ion-content>
 </ion-menu>
 
-<ion-nav #mycontent [root]="rootPage"></ion-nav>
+<!--<ion-nav #mycontent [root]="HomePage"></ion-nav>-->
+
+<!--<ion-header>-->
+  <!--<ion-navbar>-->
+    <!--<button ion-button menuToggle icon-only>-->
+      <!--<ion-icon name='menu'></ion-icon>-->
+    <!--</button>-->
+    <!--<ion-title #name (click)="show($event)">有货</ion-title>-->
+  <!--</ion-navbar>-->
+<!--</ion-header>-->
+
+<!--<ion-menu [content]="mycontent">-->
+  <!--<ion-header>-->
+    <!--<ion-toolbar>-->
+      <!--<ion-title>Menu</ion-title>-->
+    <!--</ion-toolbar>-->
+  <!--</ion-header>-->
+  <!--<ion-content  #name>-->
+    <!--<ion-list class="menus-ico-size menu-list">-->
+      <!--<button ion-item (click)="goToBoysPage()">-->
+        <!--<ion-icon ios="ios-walk" md="md-walk"></ion-icon>-->
+        <!--<span class="boys">男生</span>-->
+        <!--<span class="size-small">BOYS</span>-->
+        <!--<ion-icon class="my-arrow-forward" name="arrow-forward"></ion-icon>-->
+      <!--</button>-->
+      <!--<button ion-item>-->
+        <!--<ion-icon ios="ios-woman" md="md-woman"></ion-icon>-->
+        <!--<span class="boys">女生</span>-->
+        <!--<span class="size-small">GIRLS</span>-->
+        <!--<ion-icon class="my-arrow-forward" name="arrow-forward"></ion-icon>-->
+      <!--</button>-->
+      <!--<button ion-item>-->
+        <!--<ion-icon ios="ios-pizza" md="md-pizza"></ion-icon>-->
+        <!--<span class="boys">童装</span>-->
+        <!--<span class="size-small">KIDS</span>-->
+        <!--<ion-icon class="my-arrow-forward" name="arrow-forward"></ion-icon>-->
+      <!--</button>-->
+      <!--<button ion-item>-->
+        <!--<ion-icon ios="ios-pulse" md="md-pulse"></ion-icon>-->
+        <!--<span class="boys">创意生活</span>-->
+        <!--<span class="size-small">LIFE STYLE</span>-->
+        <!--<ion-icon class="my-arrow-forward" name="arrow-forward"></ion-icon>-->
+      <!--</button>-->
+      <!--<button ion-item>-->
+        <!--<ion-icon ios="ios-paw" md="md-paw"></ion-icon>-->
+        <!--<span class="boys">逛</span>-->
+        <!--<span class="size-small">TRENDFINDER</span>-->
+        <!--<ion-icon class="my-arrow-forward" name="arrow-forward"></ion-icon>-->
+      <!--</button>-->
+    <!--</ion-list>-->
+  <!--</ion-content>-->
+<!--</ion-menu>-->
+
+
+
+<!--<ion-nav #mycontent [root]="rootPage"></ion-nav>-->
+

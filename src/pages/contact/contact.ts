@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
-import { NavController , IonicPage } from 'ionic-angular';
+import { Component ,ViewChild} from '@angular/core';
+import { NavController , IonicPage , Nav} from 'ionic-angular';
+import {MyPage} from "../my/my";
+import {ShopPage} from "../shop/shop";
+
 @IonicPage({
   name: 'contact-page',
   segment: 'contact/:id'
@@ -10,7 +13,7 @@ import { NavController , IonicPage } from 'ionic-angular';
   templateUrl: 'contact.html'
 })
 export class ContactPage {
-  constructor(public navCtrl: NavController) {}
+
   tab_list: string ="new";
 
   goTOHomePage(detailInfo) {
@@ -21,4 +24,28 @@ export class ContactPage {
 
     },{})
   }
+
+  @ViewChild(Nav) nav :Nav;
+
+  rootPage:any=ContactPage;
+  pages:Array<{title:string,component:any}>;
+  constructor(public navCtrl: NavController) {
+    // menu.enable(true);
+    // this.pages=[
+    //   {title:'HomePage',component:ContactPage},
+    //
+    //   {title:'MyPage',component:MyPage},
+    //
+    //   {title:'ShopPage',component:ShopPage},
+    //
+    //   {title:'ContactPage',component:ContactPage}
+    // ];
+  }
+  // openPage(page){
+  //
+  //
+  //   this.nav.setRoot(page.component)
+  // }
+
+
 }

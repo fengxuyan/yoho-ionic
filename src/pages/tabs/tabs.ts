@@ -9,6 +9,11 @@ import {IndexPage} from "../index/index";
 import { App, MenuController, NavController, NavParams } from 'ionic-angular';
 import { IonicPage } from 'ionic-angular';
 
+
+
+
+
+
 @IonicPage({
   name: 'tabs-page',
   segment:'tabs/:id',
@@ -24,6 +29,8 @@ export class TabsPage {
   tab3Root = ContactPage;
   tab4Root = ShopPage;
   tab5Root = MyPage;
-  constructor() {
-  }
+
+
+
+
 }

@@ -1,8 +1,20 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>有货</ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-menu [content]="menuContent">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <button  class="menu-list-txt" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
 
 <ion-content>
 
@@ -369,3 +381,5 @@
   </ion-grid>
 
 </ion-content>
+
+<ion-nav [root]="rootPage" #menuContent swipeBackEnabled="false"></ion-nav>
